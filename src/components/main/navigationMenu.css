@@ -1,0 +1,171 @@
+.navigation-menu-container {
+    position: relative;
+    height: 100%;
+    width: 100%; 
+}
+
+nav.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    height: 10%;
+    width: 90%;
+    margin-left: 5%;
+    background: #141414;
+    border-top: 3px solid #222;
+    border-right: 3px solid #222;
+    border-left: 3px solid #222;
+    align-items: center;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.75);
+    opacity: 0.8;
+}
+
+nav.navigation button {
+    margin-right: 10px;
+    padding: 10px;
+    color: #b0b0b0;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: transparent;
+    text-transform: uppercase;
+    border: 0;
+    transition: background-color 0.5s ease;
+}
+
+
+nav.navigation button:hover {
+    background-color: #7a5454;;
+}
+
+nav.navigation button:active,
+nav.navigation button:focus {
+    background-color: #7a5454;
+}
+
+.main-content {
+    padding: 20px;
+    margin-top: 20px; 
+    transition: margin-right 0.5s ease;
+    height: auto;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content.panel-open {
+    margin-right: 50%;
+}
+
+.side-panel {
+    position: fixed;
+    top: 0;
+    right: -50%;
+    width: 50%;
+    height: 100%;
+    background: #000 URL(https://i.imgur.com/kJT3yyJ.png) no-repeat top;
+    display: block;
+    margin: auto;
+    color: #787878;
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index: 1000;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.side-panel.open {
+    right: 0;
+}
+
+.panel-content {
+    padding: 20px;
+}
+
+.close-btn {
+    position: sticky;
+    margin-left: auto;
+    z-index: 100;
+    top: 10px;
+    background-color: #333;
+    color: #777;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.close-btn:hover {
+    background-color: #555;
+}
+
+.toggle-button {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transition: transform 0.3s ease;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1001;
+    font-size: 1.2rem;
+    border-radius: 3px;
+}
+
+.toggle-button.arrow {
+    display: inline-block;
+}
+
+.toggle-button:hover {
+    color: #888;
+}
+
+@media screen and (max-width: 1000px) {
+    .side-panel.open {
+      width: 100%;
+    }
+
+  }
+
+@media (max-width: 768px) {
+    nav.navigation {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 5px;
+        height: auto;
+    }
+
+    nav.navigation button {
+        width: 100%;
+        font-size: 1rem;
+        margin: 5px 0;
+        padding: 8px;
+    }
+
+    .side-panel {
+        width: 100%;
+        right: -100%;
+    }
+
+    .side-panel.open {
+        right: 0;
+    }
+
+    .main-content {
+        margin-right: 0;
+    }
+}
+
+
+@media (max-width: 480px) {
+    nav.navigation button {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .toggle-button {
+        padding: 8px;
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,44 @@
+.generateMain button {
+    padding: 10px 10px;
+    background-color: #7a5454;
+    color: #e0d8d8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: 0.5s;
+}
+
+.generateMain button:hover {
+    background-color: #9c7070;
+}
+
+.generateMain {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 95%;
+    height: auto;
+    background-color: #141414;
+    border: 2px solid #222;
+    padding: 5px;
+    width: 90%;
+    margin: auto;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.75);
+    text-align: center;
+    opacity: 0.9;
+    gap: 10px;
+}
+
+textarea {
+    height: 200px;
+    width: 100%;
+    padding: 10px;
+    width: 95%;
+    font-size: 14px;
+    opacity: 0.8;
+    resize: none;
+    background-color: rgb(34, 34, 34);
+    color: rgb(136, 136, 136);
+}

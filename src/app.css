@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+html,
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: #e0d8d8;
+  background-image: url('https://i.imgur.com/AiE0BIK.jpeg');
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #111111;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.h2,
+.h4,
+.h5 {
+  color: #633e3e;
+  font-family: Parisienne, serif;
+  text-align: center;
+  width: 100%;
+}
+
+.h2 {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.h4 {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.h5 {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.h6,
+.h7 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  height: 15%;
+  text-align: center;
+  line-height: 38px;
+  padding: 0 20px;
+  margin: 10px;
+  color: #b0b0b0
+}
+
+.h6 {
+  background-color: #7a5454;
+  border-color: #555;
+  border-radius: 5px;
+  height: 40px;
+}
+
+.h8 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  height: 15%;
+  border-color: #555;
+  border-radius: 5px;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+
+.h9 {
+  text-align: center;
+  color: #b0b0b0
+}
+
+.h14 {
+  border-bottom: 2px solid #222;
+  color: #555;
+  display: block;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  padding: 5px;
+  text-align: left;
+  font-weight: 400;
+}
+
+button {
+  border-radius: 0px;
+}
+
+button:focus{
+  outline: none !important; 
+}
+
+.metricConteneir {
+  background-color: #141414;
+  border: 2px solid #222;
+  padding: 5px;
+  width: 90%;
+  opacity: 0.95;
+  margin: auto;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  box-sizing: border-box;
+  opacity: 0.9;
+}
+
+.input-group {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-content: flex-start;
+  flex: 1 1 220px;
+}
+
+.wandReg {
+  flex: none;
+  max-width: 300px;
+  margin: auto;
+}
+
+.input-group label {
+  font-weight: bold;
+  color: #633e3e;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.input-group input,
+.input-group select {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #222 !important;
+  box-sizing: border-box;
+  color: #b0b0b0;
+  height: 40px;
+  text-align: center;
+  margin-top: 5px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  word-break: break-word;
+  overflow: auto;
+  min-width: 0;
+}
+
+.input-group select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #222;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+  outline: none;
+  background-color: #333;
+}
+
+.creditField {
+  display: flex;
+  width: 100%;
+  margin: 0 0 0 20px;
+}
+
+.creditField input {
+  margin: 0 20px 0 20px;
+  width: 100%;
+}
+
+.con-tooltipCredit {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.checkbox-group {
+  display: inline-flex;
+  margin-bottom: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.checkbox-group input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  border: 2px solid #633e3e;
+  display: inline-block;
+  position: relative;
+  background-color: #222;
+}
+
+.checkbox-group input[type="checkbox"]:checked {
+  background-color: #222;
+}
+
+.checkbox-group input[type="checkbox"]:checked::after {
+  content: '\2714';
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  color: #633e3e;
+}
+
+p {
+  color: #888;
+  font-size: 1rem;
+  grid-column: span 3;
+}
+
+input[type="text"]::placeholder {
+  color: #777;
+}
+
+
+select option {
+  color: #777;
+  background-color: #222;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  background-color: #333;
+}
+
+
+.con-tooltip,
+.con-tooltipSkillsB {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.con-tooltipSkillsB {
+  width: 30%;
+}
+
+.con-tooltipSkillsB .hint-container {
+  margin-right: 5px;
+}
+
+.con-tooltip .h2,
+.single {
+  justify-content: center;
+  width: auto;
+}
+
+.single {
+  width: 95%;
+  margin: auto;
+}
+
+.single .question-mark {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  background: #333;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  white-space: wrap;
+  z-index: 999;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  font-size: 0.8rem;
+  width: 100%;
+  line-height: normal;
+  font-weight: 400;
+  text-align: justify;
+  overflow-y: auto;
+  max-height: 60vh;
+}
+
+.tooltip a {
+  color: #aa6e6e;
+  letter-spacing: 1px;
+}
+
+.tooltip.visible {
+  display: block;
+}
+
+.question-mark {
+  width: 20px;
+  height: 20px;
+  background-image: url('/src/image/help_1.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.question-mark:hover {
+  background-image: url('/src/image/help_2.svg');
+}
+
+.miniFrame {
+  background: #141414;
+  border-bottom: #222 3px solid;
+  border-top: 3px solid #222;
+  margin: 10px auto;
+  padding: 10px;
+  text-align: left;
+  width: 90%;
+  height: auto;
+}
+
+.miniFrameText {
+  text-align: center;
+  margin-top: 3px;
+  color: #b0b0b0
+}
+
+
+@media (max-width: 480px) {
+  html {
+    font-size: 14px !important;
+    ;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  html {
+    font-size: 16px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  html {
+    font-size: 17px;
+  }
+
+  .container {
+    padding: 25px;
+  }
+}
+
+@media (min-width: 1281px) {
+  html {
+    font-size: 18px;
+  }
+
+  .container {
+    padding: 30px;
+  }
+}

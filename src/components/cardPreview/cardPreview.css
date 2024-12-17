@@ -1,0 +1,249 @@
+#cardPreviewMain {
+  background-color: #101010;
+  border: 2px solid #222;
+  border-top: 2px solid #222;
+  margin: auto;
+  opacity: .95;
+  padding: 5px;
+  width: 95%;
+}
+
+#cardPreview {
+  font-size: 0.9rem;
+  border-bottom: 1px solid #0b100d;
+  border-left: 1px solid #0b100d;
+  margin: auto;
+  border: 10px;
+  position: relative;
+  width: 95%;
+}
+
+#cardPreviewOther {
+  -webkit-box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.85);
+  background-color: #101010;
+  border-right: 2px solid #222;
+  box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.75);
+  margin: 15px;
+  opacity: 1;
+  padding-left: 3px;
+  position: absolute;
+  right: -60px;
+  top: 25px;
+  text-align: center;
+  width: 40%;
+  z-index: 100;
+}
+
+#cardPreviewOther button {
+  background: none;
+  border: 0;
+  font-weight: 500;
+  text-align: left;
+  display: block;
+  position: relative;
+  color: #633e3e;
+  margin: 0 0 0 -5px;
+  padding: 0 !important;
+}
+
+#cardPreviewOther button span {
+  color: #777 !important;
+  position: relative;
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  transition: transform 0.3s ease, max-width 0.3s ease;
+}
+
+#cardPreviewOther button:hover span {
+  transform: scale(1.2);
+  max-width: 250px;
+}
+
+
+.descriptionMetric {
+  font-weight: bold;
+  color: #633e3e;
+}
+
+.valueMetric {
+  padding: 5px;
+}
+
+.valueMetric.special {
+  padding: 2px;
+}
+
+.metricH6 {
+  color: #633e3e;
+  font-family: Parisienne, serif;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.cardBio {
+  max-height: 500px;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  white-space: pre-line;
+}
+
+.cardBio p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.cardBio p::first-letter {
+  color: #633e3e;
+  font-family: Parisienne, serif;
+  font-size: 1.9rem;
+  padding-left: 40px;
+  line-height: 1;
+}
+
+.cardBio.expanded {
+  max-height: none;
+  overflow: visible;
+}
+
+.expandButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #e0e0e0;
+  display: flex;
+  transition: transform 0.3s ease;
+  margin: auto;
+  padding: 10px 0 20px 0;
+}
+
+.expandButton .arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.expandButton.expanded .arrow {
+  transform: rotate(180deg);
+}
+
+.expandButton:hover {
+  color: #888;
+}
+
+.imageCard {
+  background: #020202;
+  border: #222 2px solid;
+  display: block;
+  filter: grayscale(100%);
+  margin: auto;
+  max-width: 450px;
+  padding: 2px;
+  position: relative;
+  opacity: .5;
+  overflow: hidden;
+  margin: 20px 0 20px 0;
+}
+
+
+.parent {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-auto-rows: auto;
+  border: 1px solid #202020;
+  border-top: 1px solid #111;
+  width: 100%;
+  border-spacing: 0;
+}
+
+.categorySkillsB {
+  grid-column: 1 / -1;
+  background-color: #443232;
+  color: #888;
+  font-family: Verdana;
+  font-size: 0.8rem;
+  font-weight: 400;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 10px 10px 10px 15px;
+}
+
+.descriptionSkillsB.main {
+  grid-column: 1 / -1;
+  font-size: 0.8rem;
+  background-color: #070707;
+  text-align: center;
+  vertical-align: middle;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: normal !important;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+.descriptionSkillsB.sum {
+  grid-template-columns: 1fr;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.descriptionSkillsB {
+  grid-column: 1 / -1;
+  font-size: 0.8rem;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: normal !important;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  height: 100%;
+}
+
+.descriptionSkillsB.even {
+  background-color: #101010;
+}
+
+.descriptionSkillsB.odd {
+  background-color: #151515;
+}
+
+.valueSkillsB,
+.nameSkillsB,
+.costSkillsB {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+
+.nameSkillsB {
+  text-align: left;
+  grid-column: 1 / 2;
+}
+
+.nameSkillsB.first {
+  text-align: center;
+  justify-content: center;
+  grid-column: 1 / 2;
+}
+
+.valueSkillsB {
+  text-align: center;
+  justify-content: center;
+  grid-column: 2 / 3;
+}
+
+.costSkillsB {
+  text-align: center;
+  justify-content: center;
+  grid-column: 3 / 4;
+}

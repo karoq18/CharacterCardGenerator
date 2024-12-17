@@ -1,0 +1,76 @@
+.characterConteneir {
+  background-color: #141414;
+  padding: 5px;
+  min-height: 100vh;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  opacity: 0.9;
+}
+
+.animated-text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+
+.animated-text {
+  width: 100%;
+}
+
+.animated-text textPath {
+  font-family: 'Parisienne', serif;
+  font-size: 6rem;
+  fill: none;
+  stroke: #633e3e;
+  stroke-width: 2px;
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: drawText 7s ease-in-out forwards;
+  filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.7)); 
+}
+
+@keyframes drawText {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.fade-in-delayed {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeIn 0.5s ease-out forwards;
+  animation-delay: 0s;
+  flex: 0;
+}
+
+.characterConteneir .input-group{
+  border:0; 
+}
+
+.fade-in-delayed select{
+  width: 30%; 
+  align-self: center;
+  border:0;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

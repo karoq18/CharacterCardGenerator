@@ -1,0 +1,262 @@
+.tableEmotion {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: #666;
+}
+
+.tableEmotion-header {
+  display: flex;
+  background-color: #443232;
+  color: #b0b0b0;
+  padding: 0 5px 0 5px;
+}
+
+.tableEmotion-header .tableEmotion-cell {
+  text-align: center;
+  padding: 5px;
+}
+.emotion-cell{
+  flex: 0.1; 
+}
+
+.range-cell{
+  flex: 0.2 1; 
+}
+
+.description-cell{
+  flex: 1; 
+}
+
+.tableEmotion-content {
+  display: flex;
+  flex-direction: column;
+  background-color: #222;
+}
+
+.emotion-row {
+  display: flex;
+  border-top: 1px solid #444;
+}
+
+.emotion {
+  flex: 0.1;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  background-color: #101010;
+}
+
+.detailsEmotion {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.detailEmotion {
+  display: flex;
+  background-color: #151515;
+  padding: 5px;
+}
+
+.detailEmotion:nth-child(odd){
+  background-color: #101010;
+}
+
+.range {
+  flex: 0.2; 
+  text-align: center;
+  color: #633e3e;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.description {
+  flex: 1;
+  padding-left: 10px;
+}
+
+.tabs-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.tabs-header {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #222;
+  border-bottom: 1px solid black;
+  padding: 10px 0;
+}
+
+.tab {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  background-color: #676464;
+  padding: 8px;
+  margin: 2px 2px;
+  color: #b0b0b0;
+  min-width: 100px;
+  transition: 0.5s;
+}
+
+.tab.active {
+  background-color: #7a5454;
+  color: white;
+}
+
+.tab:hover {
+  background-color: #7a5454;
+  color: white;
+}
+
+.tab-content {
+  display: none;
+  padding: 10px;
+}
+
+.tab-content.active {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.select-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.select-group label {
+  margin-right: 5px;
+  color: #b0b0b0;
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.select-group select,
+.select-group input {
+  flex: 3;
+  padding: 10px;
+  background-color: #222;
+  color: #b0b0b0;
+  border-radius: 5px;
+  border: none;
+  margin-right: 10px;
+  min-width: 200px;
+}
+
+.select-group button {
+  padding: 10px 10px;
+  background-color: #7a5454;
+  color: #e0d8d8;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px;
+  flex-shrink: 0;
+  transition: 0.5s;
+}
+
+.select-group button:hover {
+  background-color: #9c7070;
+}
+
+.user-skills-input {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.user-skills-input input {
+  flex: 1;
+  padding: 10px;
+  background-color: #222;
+  color: #b0b0b0;
+  border-radius: 5px;
+  border: none;
+}
+
+.user-skills-input button {
+  padding: 10px 20px;
+  background-color: #7a5454;
+  color: #e0d8d8;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px;
+  flex-shrink: 0;
+}
+
+.error-message {
+  color: #e06c75;
+}
+
+.skillPointsToSkillB input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #222 !important;
+  box-sizing: border-box;
+  color: #b0b0b0;
+  margin: 0 0 0 5px;
+  min-width: 0;
+}
+
+.selected-skills-summary{
+  width:100%;
+  align-items: center;
+}
+
+@media screen and (max-width: 490px) {
+  .tabs-header {
+    flex-wrap: wrap;
+  }
+
+  .tab {
+    flex: 1 1 100%;
+    margin: 5px 0;
+  }
+
+  .select-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .select-group label {
+    overflow:visible;
+    margin-bottom: 3px; 
+  }
+  .select-group select,
+  .select-group input,
+  .select-group button {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .select-group button {
+    margin-bottom: 0;
+  }
+}

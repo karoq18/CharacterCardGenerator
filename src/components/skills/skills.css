@@ -1,0 +1,120 @@
+#wand {
+    background-color: #141414;
+    border: 2px solid #222;
+    padding: 5px;
+    width: 90%;
+    opacity: 0.95;
+    margin: auto;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.75);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.wandBonus{
+    text-align: center;
+    margin: 0 auto; 
+}
+
+.wandButtonGroup {
+    display: flex;
+    flex: 1 1 calc(50% - 20px);
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+.wandTypesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    width: 100%;
+    justify-content: center;
+}
+
+.wandTypes.special {
+    width: 45%; 
+    min-width: 100px;
+    box-sizing: border-box;
+    margin: 0px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.wandCategory,
+.wandTypes {
+    font-size: 0.9rem;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    border: 1px solid #222;
+    border-radius: 5px;
+    height: 40px;
+    line-height: 38px;
+    transition: background-color 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    padding: 2px;
+    margin: 5px;
+    background-color: #141414;
+    text-align: center;
+    word-break: break-all;
+}
+
+.wandCategory {
+    background-color: #633e3e;
+    border: 1px solid #444;
+}
+
+.wandCategory:hover {
+    background-color: #7a5454;
+    border-color: #555;
+}
+
+.wandTypes {
+    background-color: #897c37;
+    border: 1px solid #5c5935;
+}
+
+.wandTypes:hover {
+    background-color: #c6b24e;
+    border: 1px solid #5c5935;
+}
+
+.wandCategory:active,
+.wandTypes:active {
+    background-color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.input-group.wand {
+    flex: 1 1;
+    outline: none;
+    font-weight: 500;
+    border-radius: 5px;
+    height: 40px;
+    line-height: 38px;
+    text-align: center;
+
+}
+
+.wandBack {
+    font-weight: 400;
+    cursor: pointer;
+    background-color: #633e3e;
+    border: 0;
+    border-radius: 5px;
+    height: 40px;
+    line-height: 38px;
+    padding: 0 20px;
+    margin: 10px;
+    color: #e0d8d8;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.wandBack:hover {
+    background-color: #7a5454;
+    border-color: #555;
+
+}
